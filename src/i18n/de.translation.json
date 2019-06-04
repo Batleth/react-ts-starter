@@ -1,0 +1,10 @@
+{
+    "greeting": "Hallo, unbekannter schöner Benutzer!",
+    "onthe": "an dem",
+    "todos": "ToDo`s",
+    "button": {
+        "complete": "Fertig",
+        "add": "Hinzufügen",
+        "remove": "Entfernen"
+    }
+}

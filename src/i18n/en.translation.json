@@ -1,0 +1,10 @@
+{
+    "greeting": "Hello, unknown user!",
+    "onthe": "on the",
+    "todo": "todos",
+    "button": {
+        "complete": "Complete",
+        "add": "Add",
+        "remove": "Remove"
+    }
+}

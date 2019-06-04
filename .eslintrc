@@ -1,0 +1,4 @@
+{
+    "extends": ["esnext", "esnext/style-guide", "airbnb", "ibsolution-base"],
+    "plugins": ["prettier"]
+  }

@@ -1,0 +1,32 @@
+{
+    "editor.formatOnSave": true,
+    "prettier.eslintIntegration": true,
+    "prettier.jsxBracketSameLine": true,
+    "files.exclude": {
+      "**/.DS_Store": true,
+      "**/node_modules/": true,
+      "**/build/**/*.js.map": { "when": "$(basename)" },
+      "**/build/**/*.js": { "when": "$(basename).ts" }
+    },
+    "eslint.autoFixOnSave": true,
+    "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      { "language": "typescript", "autoFix": true },
+      { "language": "typescriptreact", "autoFix": true }
+    ],
+    "eslint.enable": true,
+    "[javascript]": {
+      "editor.formatOnSave": true
+    },
+    "[javascriptreact]": {
+      "editor.formatOnSave": true
+    },
+    "[typescript]": {
+      "editor.formatOnSave": true
+    },
+    "[typescriptreact]": {
+      "editor.formatOnSave": true
+    },
+    "appService.defaultWebAppToDeploy": "None"
+  }
