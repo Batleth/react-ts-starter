@@ -9,8 +9,8 @@ export const App : SFC = () => {
   return (
     <div className="App">
         <Switch>
-          <Route exact path="/" component={NotFound} />
           <Route path="/demo" component={Demo}/>
+          <Route exact path="/" component={NotFound} />
           <Route component={NotFound} />
         </Switch>
       </div>
