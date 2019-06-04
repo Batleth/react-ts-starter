@@ -1,12 +1,13 @@
 
 # React Typescript IBsolution Starter
 ## Includes
-[x] Material UI, including Theming
-[x] Routing (Connected-React-Router)
-[x] Axios (Fetch)
-[x] GraphQL
-[x] Redux + Redux Dev Tools, Interceptor Middleware
-[x] Internationalization with react-localize-redux
+- [x] Material UI, including Theming
+- [x] Routing (Connected-React-Router)
+- [x] Axios (Fetch)
+- [x] GraphQL
+- [x] Redux + Redux Dev Tools, Interceptor Middleware
+- - [] Add Middleware Redux Thunk for deferred actions
+- [x] Internationalization with react-localize-redux
 
 ## Purpose
 ### Best Practice Project Structure
