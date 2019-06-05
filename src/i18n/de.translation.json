@@ -1,5 +1,11 @@
 {
     "greeting": "Hallo, unbekannter schöner Benutzer!",
+    "en": "Englisch",
+    "de": "Deutsch",
+    "languages": "Sprachen",
+    "default": "Voreinstellung",
+    "active": "Aktiv",
+    "404": "404 - Seite wurde nicht gefunden",
     "onthe": "an dem",
     "todos": "ToDo`s",
     "button": {

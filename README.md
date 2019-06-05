@@ -1,17 +1,19 @@
 
 # React Typescript IBsolution Starter
 ## Includes
--   Material UI, including Theming
--   Routing (Connected-React-Router)
--   Axios (Fetch)
--   GraphQL
--   Redux + Redux Dev Tools,
--   Redux Interceptor Middleware
--   Internationalization with react-localize-redux
--   Redux-Form
+-   UI/UX: [https://material-ui.com/](Material-UI v4)
+-   Navigation: [https://github.com/supasate/connected-react-router](connected-react-router)
+-   HTTP Client: [https://github.com/axios/axios](axios)
+-   GraphQL: [https://github.com/graphql/graphql-js](graphql)
+-   GraphQL Client: [https://github.com/apollographql/apollo-client/tree/master/packages/apollo-boost](apollo-boost + react-apollo)
+-   UI State Management: [https://github.com/reduxjs/redux](redux), [https://github.com/reduxjs/react-redux](react-redux)
+- - Redux Interceptor Middleware
+- - TODO: Redux Async Actions (Thunk/Sage)
+-   i18n:  [https://github.com/ryandrewjohnson/react-localize-redux](react-localize-redux)
+-   Forms: [https://redux-form.com](redux-form)
 
-TODO: Redux Thunk/Sage (Middleware Async Actions)
 TODO: Routing Examples
+TODO: Redux Async Actions Example (Thunk/Sage)
 
 ## Purpose
 ### Best Practice Project Structure
@@ -24,6 +26,14 @@ TODO: Routing Examples
 3. Go into project directory `cd react-start`
 4. `yarn start` or `npm start`
 5. Explore Demo [http://localhost:3000](http://localhost:3000)
+## Available Demos
+- [http://localhost:3000/demo/redux] (UI Statemanagement with Redux)
+- [http://localhost:3000/demo/form](Redux Form)
+- [http://localhost:3000/demo/rest] (HTTP Request)
+- [http://localhost:3000/demo/graphql] (GraphQL Request)
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
