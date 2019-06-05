@@ -28,6 +28,7 @@ TODO: Redux Async Actions Example (Thunk/Sage)
 5. Explore Demo [http://localhost:3000](http://localhost:3000)
 ## Available Demos
 - [http://localhost:3000/demo/redux] (UI Statemanagement with Redux)
+- [http://localhost:3000/demo/i18n] (i18n with react-localize-redux)
 - [http://localhost:3000/demo/form](Redux Form)
 - [http://localhost:3000/demo/rest] (HTTP Request)
 - [http://localhost:3000/demo/graphql] (GraphQL Request)
