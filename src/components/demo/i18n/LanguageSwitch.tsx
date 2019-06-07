@@ -9,10 +9,6 @@ interface IProps extends LocalizeContextProps{
 
 
 class LanguageSwitchComponent extends PureComponent<IProps> {
-  constructor(props: IProps) {
-    super(props);
-  }
-
   public render() {
     // Wait for initialization of Language Provider
     if (!this.props.activeLanguage){

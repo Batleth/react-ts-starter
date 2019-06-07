@@ -1,9 +1,7 @@
 import React, { PureComponent } from "react";
-import { set } from 'lodash';
 import { Field, reduxForm, InjectedFormProps } from 'redux-form';
 import { LocalizeContextProps, withLocalize } from "react-localize-redux";
 import { validateEmail } from "../../..//utils";
-import { AnyARecord } from "dns";
 
 // Form Model
 export interface IUser{
@@ -31,9 +29,6 @@ const renderField = (props: any): JSX.Element => (
 interface IProps extends LocalizeContextProps {};
 
 class ContactFormComponent extends PureComponent<IProps & InjectedFormProps<IUser, IProps>>{
-  constructor(props: IProps & InjectedFormProps<IUser, IProps>) {
-    super(props);
-  }
   public render() {
     if (!this.props){
       return "Loading...";

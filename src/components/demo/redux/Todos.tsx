@@ -26,9 +26,6 @@ const mapDispatchToProps = (dispatch: Dispatch<AnyAction>) => ({
 });
 
 class TodoContainer extends PureComponent<IProps> {
-  constructor(props: IProps) {
-    super(props);
-  }
 
   public render() {
     if (!this.props.todos){

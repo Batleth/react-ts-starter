@@ -17,10 +17,6 @@ interface IProps extends LocalizeContextProps {
 }
 
 class TodoListComponent extends PureComponent<IProps> {
-  constructor(props: IProps) {
-    super(props);
-  }
-
   public render() {
     if (!this.props.todos){
       return "Loading...";

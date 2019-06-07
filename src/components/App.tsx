@@ -7,7 +7,7 @@ const NotFound: SFC = () => <div><Translate id="404"/></div>;
 
 export const App : SFC = () => {
   return (
-    <div>
+    <div style={{padding: "2%"}}>
         <Switch>
           <Route path="/demo" component={Demo}/>
           <Route exact path="/" component={NotFound} />

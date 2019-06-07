@@ -7,9 +7,6 @@ const submitForm = (formValues: IUser) => {
   };
 
 class ContactPageContainer extends PureComponent<{}>{
-  constructor(props:{}) {
-    super(props);
-  }
   public render() {
     if (!this.props){
       return "Loading...";

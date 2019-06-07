@@ -1,4 +1,4 @@
-import React, { PureComponent, ChangeEvent } from "react";
+import React, { PureComponent } from "react";
 import { map } from 'lodash';
 import { ExchangeRatesAPI } from "../../../middleware";
 

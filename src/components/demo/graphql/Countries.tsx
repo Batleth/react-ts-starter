@@ -18,10 +18,6 @@ const CountriesQuery = gql`
 `;
 
 class CountriesContainer extends PureComponent<{}> {
-  constructor(props: {}) {
-    super(props);
-  }
-
   public render() {
     if (!this.props){
       return "Loading...";
