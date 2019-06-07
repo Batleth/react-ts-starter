@@ -1,3 +1,3 @@
-export interface UIState {
+export interface IUIState {
     loading: boolean
 }

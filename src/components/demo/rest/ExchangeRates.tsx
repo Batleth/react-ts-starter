@@ -2,12 +2,12 @@ import React, { PureComponent } from "react";
 import { map } from 'lodash';
 import { ExchangeRatesAPI } from "../../../middleware";
 
-type Currency = {
+interface ICurrency {
     [name: string]: number;
 }
 
 interface IState {
-    rates?: [Currency];
+    rates?: [ICurrency];
     base: string;
     date?: string;
 }
@@ -17,7 +17,7 @@ class ExchangeRateList extends PureComponent<{}, IState> {
     super(props);
     this.state = {base: 'EUR'};
   }
-  componentDidMount(){
+  public componentDidMount(){
       ExchangeRatesAPI.get('/latest?base='+this.state.base).then( res => this.setState({date: res.data.date, rates: res.data.rates}));
   }
   public render() {

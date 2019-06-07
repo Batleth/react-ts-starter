@@ -4,7 +4,7 @@ import { GraphQlClient } from '../../../middleware';
 import gql from "graphql-tag";
 
 
-interface Data {
+interface IData {
     countries: Array<{name: string; code: string;}>;
 };
 
@@ -25,10 +25,10 @@ class CountriesContainer extends PureComponent<{}> {
     return (
         <div>
           <h1>Countries</h1>
-                <Query<Data,{}> query={CountriesQuery} client={GraphQlClient}>
+                <Query<IData,{}> query={CountriesQuery} client={GraphQlClient}>
                 {({loading, error, data }) => {
-                    if (loading) return <p>Loading...</p>;
-                    if (error) return <p>{error.message}</p>;
+                    if (loading) { return <p>Loading...</p> };
+                    if (error) { return <p>{error.message}</p> };
                     const countries = data ? data.countries : [];
                     return (
                         <ul>

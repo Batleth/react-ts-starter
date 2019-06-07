@@ -12,12 +12,12 @@ import { createBrowserHistory, History } from "history";
 import { configureStore, configureTheme, I18n, GraphQlClient } from './middleware';
 import { App } from './components/App';
 
-interface ApplicationState {
+interface IApplicationState {
   store: Store<any, AnyAction>;
   theme: Theme;
   history: History<any>;
 }
-class Init extends PureComponent<{}, ApplicationState>{
+class Init extends PureComponent<{}, IApplicationState>{
   constructor(props: {}){
     super(props);
 

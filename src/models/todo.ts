@@ -1,7 +1,7 @@
-export interface Todo {
+export interface ITodo {
     text: string;
     completed: boolean;
 }
-export interface TodosState {
-    todos: Todo[];
+export interface ITodosState {
+    todos: ITodo[];
 }

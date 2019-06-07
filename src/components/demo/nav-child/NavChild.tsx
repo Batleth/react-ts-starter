@@ -1,27 +1,14 @@
 import React, { PureComponent } from "react";
 import { RouteComponentProps } from 'react-router';
-import { RouterRootState } from "connected-react-router";
-import { connect } from "react-redux";
 
 interface IParams {
   requiredParam: string;
 }
-interface IProps extends RouteComponentProps<IParams> {
-  pathname: string;
-  search: string;
-  hash: string;
-};
+interface IProps extends RouteComponentProps<IParams> {};
 
 interface IState {
   internalValue: string;
 }
-
-const mapStateToProps = (state: RouterRootState) => ({
-    pathname: state.router.location.pathname,
-    search: state.router.location.search,
-    hash: state.router.location.hash,
-});
-
 class NavChildComponent extends PureComponent<IProps, IState> {
   // Example for using a constructor, it uneccessary if no intitialization is made
   constructor(props: IProps) {
@@ -30,10 +17,10 @@ class NavChildComponent extends PureComponent<IProps, IState> {
   }
 
   public render() {
-    if (!this.props.pathname){
+    if (!this.props){
       return "Loading...";
     }
-    const {pathname, hash, search } = this.props;
+    const {pathname, hash, search } = this.props.location;
     const { requiredParam } = this.props.match.params;
 
     return (
@@ -44,4 +31,4 @@ class NavChildComponent extends PureComponent<IProps, IState> {
   }
 };
 
-export const NavChild = connect(mapStateToProps, null)(NavChildComponent);
+export const NavChild = NavChildComponent;

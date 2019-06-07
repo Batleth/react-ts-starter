@@ -1,11 +1,9 @@
 import { History } from "history";
-import { combineReducers } from 'redux';
-import { connectRouter } from 'connected-react-router';
+import { combineReducers, applyMiddleware, createStore } from 'redux';
+import { connectRouter, routerMiddleware } from 'connected-react-router';
 import { localizeReducer } from 'react-localize-redux';
-import { applyMiddleware, createStore } from "redux";
 import { reducer as formReducer } from 'redux-form';
 import thunk from 'redux-thunk';
-import { routerMiddleware } from "connected-react-router";
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { Interceptor } from './interceptor'
 import { UIReducer, TodoReducer } from '../reducers';
@@ -18,7 +16,7 @@ const application = combineReducers({
 const reducers = (history: History<any>) => combineReducers({
     router: connectRouter(history),
     localize: localizeReducer,
-    application: application,
+    application,
     form: formReducer
 })
 

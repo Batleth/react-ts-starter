@@ -3,8 +3,8 @@ import { ContactForm }  from ".";
 import { IUser } from "./ContactForm";
 
 const submitForm = (formValues: IUser) => {
-    console.log(formValues);
-  };
+  // DO SOMETHING
+};
 
 class ContactPageContainer extends PureComponent<{}>{
   public render() {

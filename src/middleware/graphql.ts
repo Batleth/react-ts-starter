@@ -1,5 +1,4 @@
-import ApolloClient from "apollo-boost";
-import { PresetConfig } from 'apollo-boost';
+import ApolloClient, { PresetConfig } from "apollo-boost";
 
 const GraphQlConfig: PresetConfig = {
     uri: 'https://countries.trevorblades.com',

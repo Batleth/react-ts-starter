@@ -1,22 +1,22 @@
 import { AnyAction } from 'redux';
 import { TodoActionType } from './ActionTypes';
-import { Todo } from '../models';
+import { ITodo } from '../models';
 
-export const addTodo = (todo: Todo): AnyAction => ({
+export const addTodo = (todo: ITodo): AnyAction => ({
     type: TodoActionType.ADD_TODO,
     todo
 });
 
-export const removeTodo = (todo: Todo): AnyAction => ({
+export const removeTodo = (todo: ITodo): AnyAction => ({
     type: TodoActionType.REMOVE_TODO,
     todo,
 });
 
-export const completeTodo = (todo: Todo): AnyAction => ({
+export const completeTodo = (todo: ITodo): AnyAction => ({
     type: TodoActionType.COMPLETE_TODO,
     todo,
 });
-export const updateTodo = (todo: Todo, text: string): AnyAction => ({
+export const updateTodo = (todo: ITodo, text: string): AnyAction => ({
     type: TodoActionType.UPDATE_TODO,
     todo,
     text

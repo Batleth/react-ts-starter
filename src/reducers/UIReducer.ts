@@ -1,13 +1,13 @@
 import { AnyAction, Reducer } from 'redux';
 import { UIActionType } from '../actions';
-import { UIState } from '../models';
+import { IUIState } from '../models';
 
-const initial: UIState = {
+const initial: IUIState = {
     loading: false,
 };
 
-export const UIReducer: Reducer<UIState> = (
-    state: UIState = initial,
+export const UIReducer: Reducer<IUIState> = (
+    state: IUIState = initial,
     action: AnyAction,
 ) => {
     switch (action.type) {

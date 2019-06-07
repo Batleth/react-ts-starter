@@ -1,6 +1,6 @@
 import React, { PureComponent } from "react";
 import { map } from 'lodash';
-import { Todo } from "../../../../models";
+import { ITodo } from "../../../../models";
 import { LocalizeContextProps, Translate, withLocalize } from "react-localize-redux";
 
 
@@ -11,9 +11,9 @@ const incomplete = {
     textDecoration: "none"
 }
 interface IProps extends LocalizeContextProps {
-    todos: Todo[];
-    removeTodo: (todo: Todo) => void;
-    completeTodo: (todo: Todo) => void;
+    todos: ITodo[];
+    removeTodo: (todo: ITodo) => void;
+    completeTodo: (todo: ITodo) => void;
 }
 
 class TodoListComponent extends PureComponent<IProps> {

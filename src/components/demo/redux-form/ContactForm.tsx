@@ -14,7 +14,7 @@ export interface IUser{
 // Field Validation
 const required = (value: any) => value ? undefined : 'Required';
 const email = (value: any) => validateEmail(value) ? undefined : 'Incorrect Email';
-const number = (value: any) => value && isNaN(Number(value)) ? 'Must be a number' : undefined;
+const numberValidation = (value: any) => value && isNaN(Number(value)) ? 'Must be a number' : undefined;
 
 const renderField = (props: any): JSX.Element => (
     <div>
@@ -26,9 +26,7 @@ const renderField = (props: any): JSX.Element => (
     </div>
 );
 
-interface IProps extends LocalizeContextProps {};
-
-class ContactFormComponent extends PureComponent<IProps & InjectedFormProps<IUser, IProps>>{
+class ContactFormComponent extends PureComponent<LocalizeContextProps & InjectedFormProps<IUser, LocalizeContextProps>>{
   public render() {
     if (!this.props){
       return "Loading...";
@@ -43,7 +41,7 @@ class ContactFormComponent extends PureComponent<IProps & InjectedFormProps<IUse
                 <Field name="lastName" component={renderField} label="Last Name" type="text" placeholder="Last Name" validate={[required]}/>
             </div>
             <div>
-                <Field name="age" component={renderField} label="Age" type="number" validate={[required,number]}/>
+                <Field name="age" component={renderField} label="Age" type="number" validate={[required,numberValidation]}/>
             </div>
             <div>
                 <Field name="email" component={renderField} label="E-Mail" type="email" validate={[required,email]}/>
@@ -61,6 +59,6 @@ class ContactFormComponent extends PureComponent<IProps & InjectedFormProps<IUse
   }
 };
 
-export const ContactForm = withLocalize(reduxForm<IUser, IProps>({
+export const ContactForm = withLocalize(reduxForm<IUser, LocalizeContextProps>({
     form: 'form'
   })(ContactFormComponent));

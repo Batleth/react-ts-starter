@@ -2,18 +2,19 @@
 # React Typescript IBsolution Starter
 ## Includes
 -   UI/UX: [https://material-ui.com/](Material-UI v4)
--   Navigation: [https://github.com/supasate/connected-react-router](connected-react-router)
+-   Navigation: [https://github.com/ReactTraining/react-router](react-router)
 -   HTTP Client: [https://github.com/axios/axios](axios)
 -   GraphQL: [https://github.com/graphql/graphql-js](graphql)
 -   GraphQL Client: [https://github.com/apollographql/apollo-client/tree/master/packages/apollo-boost](apollo-boost + react-apollo)
 -   UI State Management: [https://github.com/reduxjs/redux](redux), [https://github.com/reduxjs/react-redux](react-redux)
 - - Redux Interceptor Middleware
+- - Navigation within Reducers State [https://github.com/supasate/connected-react-router](connected-react-router)
 - - TODO: Redux Async Actions (Thunk/Sage)
 -   i18n:  [https://github.com/ryandrewjohnson/react-localize-redux](react-localize-redux)
 -   Forms: [https://redux-form.com](redux-form)
 
-TODO: Routing Examples
 TODO: Redux Async Actions Example (Thunk/Sage)
+TODO: ProtectedRoute / Redirects
 
 ## Purpose
 ### Best Practice Project Structure
@@ -47,10 +48,13 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
-### `npm test`
+### `npm lint`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs tslint with predefined configuration.
+
+### `npm clean`
+
+Runs rimraf on the `build`folder. Removes `build` folder and rebuilds the application.
 
 ### `npm run build`
 

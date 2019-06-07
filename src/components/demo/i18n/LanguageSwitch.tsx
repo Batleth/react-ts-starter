@@ -2,13 +2,7 @@ import React, { PureComponent } from "react";
 import { map } from 'lodash';
 import { LocalizeContextProps, withLocalize, Translate } from "react-localize-redux";
 
-
-interface IProps extends LocalizeContextProps{
-
-};
-
-
-class LanguageSwitchComponent extends PureComponent<IProps> {
+class LanguageSwitchComponent extends PureComponent<LocalizeContextProps> {
   public render() {
     // Wait for initialization of Language Provider
     if (!this.props.activeLanguage){
