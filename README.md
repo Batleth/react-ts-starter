@@ -1,17 +1,17 @@
 
 # React Typescript IBsolution Starter
 ## Includes
--   UI/UX: [https://material-ui.com/](Material-UI v4)
--   Navigation: [https://github.com/ReactTraining/react-router](react-router)
--   HTTP Client: [https://github.com/axios/axios](axios)
--   GraphQL: [https://github.com/graphql/graphql-js](graphql)
--   GraphQL Client: [https://github.com/apollographql/apollo-client/tree/master/packages/apollo-boost](apollo-boost + react-apollo)
--   UI State Management: [https://github.com/reduxjs/redux](redux), [https://github.com/reduxjs/react-redux](react-redux)
+-   UI/UX: [https://material-ui.com/] (Material-UI v4)
+-   Navigation: [https://github.com/ReactTraining/react-router] (react-router)
+-   HTTP Client: [https://github.com/axios/axios] (axios)
+-   GraphQL: [https://github.com/graphql/graphql-js] (graphql)
+-   GraphQL Client: [https://github.com/apollographql/apollo-client/tree/master/packages/apollo-boost] (apollo-boost + react-apollo)
+-   UI State Management: [https://github.com/reduxjs/redux] (redux), [https://github.com/reduxjs/react-redux] (react-redux)
 - - Redux Interceptor Middleware
-- - Navigation within Reducers State [https://github.com/supasate/connected-react-router](connected-react-router)
+- - Navigation within Reducers State [https://github.com/supasate/connected-react-router] (connected-react-router)
 - - TODO: Redux Async Actions (Thunk/Sage)
--   i18n:  [https://github.com/ryandrewjohnson/react-localize-redux](react-localize-redux)
--   Forms: [https://redux-form.com](redux-form)
+-   i18n:  [https://github.com/ryandrewjohnson/react-localize-redux] (react-localize-redux)
+-   Forms: [https://redux-form.com] (redux-form)
 
 TODO: Redux Async Actions Example (Thunk/Sage)
 TODO: ProtectedRoute / Redirects
