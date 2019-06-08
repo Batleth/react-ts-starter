@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 import { Switch, Route, RouteComponentProps } from "react-router";
-import { Link } from "react-router-dom";
 import { Todos, ExchangeRates, Countries, ContactPage, LanguageSwitch, NavChild} from ".";
+import { Button } from "@material-ui/core";
 
 interface IProps extends RouteComponentProps<{}> {
 }
@@ -13,14 +13,14 @@ class Demo extends PureComponent<IProps> {
 
     return (
         <div>
-            <Link to="/demo/redux">Redux</Link><br/>
-            <Link to="/demo/form">Redux Form</Link><br/>
-            <Link to="/demo/i18n">I18n (Translation)</Link><br/>
-            <Link to="/demo/rest">Rest</Link><br/>
-            <Link to="/demo/graphql">GraphQL</Link><br/>
-            <Link to="" onClick={() => this.props.history.goBack()}>Go Back</Link><br/>
-            <Link to="" onClick={() => this.props.history.goForward()}>Go Forward</Link><br/>
-            <Link to="/demo/child/param?search=true#hash">Navigate with Param, Hash and Search</Link><br/>
+            <Button onClick={() => this.props.history.push("/demo/redux")}>Redux</Button><br/>
+            <Button onClick={() => this.props.history.push("/demo/form")}>Redux Form</Button><br/>
+            <Button onClick={() => this.props.history.push("/demo/i18n")}>I18n</Button><br/>
+            <Button onClick={() => this.props.history.push("/demo/rest")}>Rest</Button><br/>
+            <Button onClick={() => this.props.history.push("/demo/graphql")}>GraphQL</Button><br/>
+            <Button onClick={() => this.props.history.goBack()}>Go Back</Button><br/>
+            <Button onClick={() => this.props.history.goForward()}>Go Forward</Button><br/>
+            <Button onClick={() => this.props.history.push("/demo/child/param?search=true#hash")}>Navigate with Param, Hash and Search</Button>
 
           <Switch>
             <Route path="/demo/rest" component={ExchangeRates} />
