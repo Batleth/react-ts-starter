@@ -2,6 +2,7 @@ import React, { PureComponent } from "react";
 import { Switch, Route, RouteComponentProps } from "react-router";
 import { Todos, ExchangeRates, Countries, ContactPage, LanguageSwitch, NavChild} from ".";
 import { Button } from "@material-ui/core";
+import { ML } from "./tensorflow";
 
 interface IProps extends RouteComponentProps<{}> {
 }
@@ -18,6 +19,7 @@ class Demo extends PureComponent<IProps> {
             <Button onClick={() => this.props.history.push("/demo/i18n")}>I18n</Button><br/>
             <Button onClick={() => this.props.history.push("/demo/rest")}>Rest</Button><br/>
             <Button onClick={() => this.props.history.push("/demo/graphql")}>GraphQL</Button><br/>
+            <Button onClick={() => this.props.history.push("/demo/tensorflow")}>TensorFlow JS</Button><br/>
             <Button onClick={() => this.props.history.goBack()}>Go Back</Button><br/>
             <Button onClick={() => this.props.history.goForward()}>Go Forward</Button><br/>
             <Button onClick={() => this.props.history.push("/demo/child/param?search=true#hash")}>Navigate with Param, Hash and Search</Button>
@@ -28,6 +30,7 @@ class Demo extends PureComponent<IProps> {
             <Route path="/demo/graphql" component={Countries}></Route>
             <Route path="/demo/form" component={ContactPage}></Route>
             <Route path="/demo/i18n" component={LanguageSwitch}></Route>
+            <Route path="/demo/tensorflow" component={ML}></Route>
             <Route path="/demo/child/:requiredParam" component={NavChild}></Route>
           </Switch>
         </div>
